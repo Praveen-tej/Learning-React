@@ -7,6 +7,7 @@ function App() {
   const [name, setName] = useState("");
   const [cardType, setCardType] = useState("");
   return (
+
     <div>
       <label htmlFor="name">Enter Name:</label>
       <input
@@ -16,6 +17,7 @@ function App() {
         }}
       />
       <br/>
+
       <label htmlFor="cardType">Greeting Type:</label>
       <select
         onChange={(e) => {

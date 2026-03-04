@@ -1,0 +1,77 @@
+/* Reset + base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7fb;
+  color: #333;
+}
+
+
+#root {
+  padding: 40px;
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  
+}
+
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.product-gallery {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.product-card img {
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Product text */
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.product-card b {
+  font-weight: 600;
+}
+
+.product-card i {
+  color: #4caf50;
+  font-style: normal;
+  font-weight: 500;
+}
