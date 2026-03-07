@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import '../App.css'
 export default function TodoForm({onAdd}) {
     const [value, setValue] = useState("")
 
@@ -15,7 +15,7 @@ export default function TodoForm({onAdd}) {
     return(
         <div>
              <input  value={value} onChange={handleChange}   type="text" placeholder="Enter your task"/>
-             <button onClick={handleAdd}>Add</button>
+             <button  className="add-btn" onClick={handleAdd}>Add</button>
         </div>
        
     )
